@@ -11,7 +11,7 @@ cd /usr/bin/.pyenv
 sudo mkdir shims
 sudo mkdir versions
 
-sudo chown -R ec2-user:ec2-user /usr/bin/.pyenv
+sudo chown -R ubuntu:ubuntu /usr/bin/.pyenv
 
 cd ~
 sed -i -e 's/alias python/#alias python/g' ~/.bashrc
