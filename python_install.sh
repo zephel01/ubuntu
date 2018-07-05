@@ -5,6 +5,7 @@ sudo sed -i 's/us-east-1\.ec2\.//g' /etc/apt/sources.list
 
 # 開発環境インストール
 sudo apt-get update
+sudo apt upgrade
 sudo apt-get install git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
 
 # pyenv install
@@ -20,6 +21,13 @@ sudo chown -R ubuntu:ubuntu /usr/bin/.pyenv
 cat ~/ubuntu/bashrc_add >> ~/.bashrc
 
 source ~/.bashrc
+
+# export pyenv
+export PYENV_ROOT="/usr/bin/.pyenv"
+if [ -d "${PYENV_ROOT}" ]; then
+export PATH=${PYENV_ROOT}/bin:$PATH
+eval "$(pyenv init -)"
+fi
 
 pyenv install 3.6.5
 pyenv global 3.6.5
