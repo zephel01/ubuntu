@@ -18,6 +18,8 @@ sudo mkdir versions
 
 sudo chown -R ubuntu:ubuntu /usr/bin/.pyenv
 
+cp ~/ubuntu/bashrc ~/.bashrc
+
 cat ~/ubuntu/bashrc_add >> ~/.bashrc
 
 source ~/.bashrc
