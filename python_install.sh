@@ -21,6 +21,7 @@ sudo chown -R ubuntu:ubuntu /usr/bin/.pyenv
 cat ~/ubuntu/bashrc_add >> ~/.bashrc
 
 source ~/.bashrc
+source ~/.bashrc
 
 pyenv install 3.6.5
 pyenv global 3.6.5
