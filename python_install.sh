@@ -20,7 +20,13 @@ sudo chown -R ubuntu:ubuntu /usr/bin/.pyenv
 
 cp ~/ubuntu/bashrc ~/.bashrc
 
-cat ~/ubuntu/bashrc_add >> ~/.bashrc
+cat << 'EOF' >> ~/.bashrc
+export PYENV_ROOT="/usr/bin/.pyenv"
+if [ -d "${PYENV_ROOT}" ]; then
+export PATH=${PYENV_ROOT}/bin:$PATH
+eval "$(pyenv init -)"
+fi
+EOF
 
 source ~/.bashrc
 
