@@ -25,9 +25,10 @@ fi
 EOF
 
 source $HOME/.bashrc
+exec bash
 
-$HOME/.pyenv/bin/pyenv install 3.6.5
-$HOME/.pyenv/bin/pyenv global 3.6.5
+pyenv install 3.6.5
+pyenv global 3.6.5
 
 pip install --upgrade pip
 
@@ -39,6 +40,3 @@ pip install hjson
 pip install quandl
 pip install tornado
 pip install pygame
-
-exec bash
-
