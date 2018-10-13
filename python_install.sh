@@ -38,3 +38,5 @@ pip install pandas --no-build-isolation
 pip install colorconsole
 pip install websocket-client
 pip install hjson
+
+exec bash
