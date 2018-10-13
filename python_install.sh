@@ -10,18 +10,17 @@ sudo apt-get install git gcc make openssl libssl-dev libbz2-dev libreadline-dev 
 
 # pyenv install
 
-sudo /usr/bin/git clone https://github.com/yyuu/pyenv.git /usr/bin/.pyenv
+/usr/bin/git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
-cd /usr/bin/.pyenv
-sudo mkdir shims
-sudo mkdir versions
+cd ~/.pyenv
+mkdir shims
+mkdir versions
 
-sudo chown -R ubuntu:ubuntu /usr/bin/.pyenv
-
+cp ~/.bashrc ~/.bashrc.old
 cp ~/ubuntu/bashrc ~/.bashrc
 
 cat << 'EOF' >> ~/.bashrc
-export PYENV_ROOT="/usr/bin/.pyenv"
+export PYENV_ROOT="~/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
 export PATH=${PYENV_ROOT}/bin:$PATH
 eval "$(pyenv init -)"
