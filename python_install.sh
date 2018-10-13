@@ -16,9 +16,6 @@ cd ~/.pyenv
 mkdir shims
 mkdir versions
 
-cp ~/.bashrc ~/.bashrc.old
-cp ~/ubuntu/bashrc ~/.bashrc
-
 cat << 'EOF' >> ~/.bashrc
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
@@ -27,7 +24,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 EOF
 
-source ~/.bashrc
+source $HOME/.bashrc
 
 pyenv install 3.6.5
 pyenv global 3.6.5
