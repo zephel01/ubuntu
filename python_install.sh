@@ -3,6 +3,8 @@
 # delete us-east1.ec2.
 sudo sed -i 's/us-east-1\.ec2\.//g' /etc/apt/sources.list
 
+sed -i -e "6,9s:^:#:" ~/.bashrc
+
 # 開発環境インストール
 sudo apt-get update
 sudo apt upgrade
@@ -25,7 +27,6 @@ fi
 EOF
 
 source $HOME/.bashrc
-exec bash
 
 pyenv install 3.6.5
 pyenv global 3.6.5
