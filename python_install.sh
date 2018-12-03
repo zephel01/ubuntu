@@ -38,5 +38,8 @@ pip install pandas --no-build-isolation
 pip install colorconsole
 pip install websocket-client
 pip install hjson
+pip install simplejson
+pip install datetime
+pip install requests
 
 exec bash
