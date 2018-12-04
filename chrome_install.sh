@@ -8,7 +8,7 @@ sudo apt -f install -y
 
 sudo apt install unzip
 
-wget https://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zi
+wget https://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/bin/
 
