@@ -41,5 +41,6 @@ pip install hjson
 pip install simplejson
 pip install datetime
 pip install requests
+pip install configparser
 
 exec bash
