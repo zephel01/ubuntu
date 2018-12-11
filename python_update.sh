@@ -12,5 +12,5 @@ pyenv global 3.6.7
 pip install --upgrade pip
 
 ## pip install
-pip install -r ./requirements.txt
+pip install -r ~/ubuntu/requirements.txt
 
