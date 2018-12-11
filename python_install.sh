@@ -33,13 +33,7 @@ pyenv global 3.6.5
 
 pip install --upgrade pip
 
-pip install pybitflyer
-pip install pandas --no-build-isolation
-pip install colorconsole
-pip install websocket-client
-pip install hjson
-pip install simplejson
-pip install datetime
-pip install requests
+## pip install
+pip install -r ./requirements.txt
 
 exec bash
