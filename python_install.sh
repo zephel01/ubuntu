@@ -8,7 +8,8 @@ sed -i -e "6,9s:^:#:" ~/.bashrc
 # 開発環境インストール
 sudo apt-get update
 sudo apt upgrade
-sudo apt-get install git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev
+sudo apt-get install libffi-dev
 
 # pyenv install
 
